@@ -27,3 +27,10 @@ dependencies:
   - name: postgresql
     version: 15.2.5
     repository: https://charts.bitnami.com/bitnami
+    alias: auth-postgres
+
+dependencies:
+  - name: postgresql
+    version: 15.2.5
+    repository: https://charts.bitnami.com/bitnami
+    alias: process-postgres
