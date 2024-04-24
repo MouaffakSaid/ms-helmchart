@@ -23,4 +23,4 @@ spec:
             - name: SECRET_KEY
               value: He39zDQW7RdkOcxe3L9qvoSQ/ef40BG6Ro4hrHDjE+U=
             - name: DB_ACCESS
-              value: postgres://postgres:postgres@localhost/contacts
+              value: postgres://postgres:postgres@ms-process-postgres/contacts
