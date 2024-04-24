@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: process
-          image: ms-process
+          image: mouaffak1/ms-process
           ports:
             - containerPort: 5155
           env:
