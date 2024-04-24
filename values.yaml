@@ -1,4 +1,4 @@
-postgres:
+postgresql:
   auth:
     postgresPassword: postgres
     database: auth

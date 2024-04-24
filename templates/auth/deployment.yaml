@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auth
+  name: ms-auth
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: auth
+      app: ms-auth
   template:
     metadata:
       labels:
-        app: auth
+        app: ms-auth
     spec:
       containers:
-        - name: auth
+        - name: ms-auth
           image: ms-auth
           ports:
             - containerPort: 5156
