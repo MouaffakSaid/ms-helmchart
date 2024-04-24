@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth
+  template:
+    metadata:
+      labels:
+        app: auth
+    spec:
+      containers:
+        - name: auth
+          image: ms-auth
+          ports:
+            - containerPort: 5156
+          env:
+            - name: PORT
+              value: '5156'
+            - name: MS_URL
+              value: "process:5155"
+            - name: SECRET_KEY
+              value: He39zDQW7RdkOcxe3L9qvoSQ/ef40BG6Ro4hrHDjE+U=
+            - name: DB_ACCESS
+              value: postgres://postgres:postgres@localhost/auth
+
+
+             

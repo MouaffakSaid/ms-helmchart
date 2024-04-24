@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: process
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: process
+  template:
+    metadata:
+      labels:
+        app: process
+    spec:
+      containers:
+        - name: process
+          image: ms-process
+          ports:
+            - containerPort: 5155
+          env:
+            - name: PORT
+              value: '5155'
+            - name: SECRET_KEY
+              value: He39zDQW7RdkOcxe3L9qvoSQ/ef40BG6Ro4hrHDjE+U=
+            - name: DB_ACCESS
+              value: postgres://postgres:postgres@localhost/contacts

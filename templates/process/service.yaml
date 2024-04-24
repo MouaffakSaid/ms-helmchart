@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: process
+spec:
+  ports:
+    - port: 5155
+      name: process
+      protocol: TCP
+      targetPort: 5155
+  selector:
+    app: process
