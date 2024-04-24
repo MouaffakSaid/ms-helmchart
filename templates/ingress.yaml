@@ -14,13 +14,13 @@ spec:
               pathType: Prefix
               backend:
                 service:
-                  name: orders
+                  name: process
                   port:
                     number: 5155
             - path: /auth
               pathType: Prefix
               backend:
                 service:
-                  name: auth
+                  name: ms-auth
                   port:
                     number: 5156
