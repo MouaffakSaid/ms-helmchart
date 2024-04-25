@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: process
+  name: ingestion
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: process
+      app: ingestion
   template:
     metadata:
       labels:
-        app: process
+        app: ingestion
     spec:
       containers:
-        - name: process
-          image: mouaffak1/ms-process
+        - name: ingestion
+          image: mouaffak1/ms-ingestion
           ports:
             - containerPort: 5155
           env:
@@ -23,4 +23,4 @@ spec:
             - name: SECRET_KEY
               value: He39zDQW7RdkOcxe3L9qvoSQ/ef40BG6Ro4hrHDjE+U=
             - name: DB_ACCESS
-              value: postgres://postgres:postgres@ms-process-postgres/contacts
+              value: postgres://postgres:postgres@ms-ingestion-postgres/contacts

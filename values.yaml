@@ -3,7 +3,7 @@ auth-postgres:
     postgresPassword: postgres
     database: auth
 
-process-postgres:
+ingestion-postgres:
   auth:
     postgresPassword: postgres
     database: contacts

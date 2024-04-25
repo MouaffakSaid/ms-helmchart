@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: process
+  name: ingestion
 spec:
   ports:
     - port: 5155
-      name: process
+      name: ingestion
       protocol: TCP
       targetPort: 5155
   selector:
-    app: process
+    app: ingestion
