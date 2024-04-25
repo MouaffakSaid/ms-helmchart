@@ -21,7 +21,7 @@ spec:
             - name: PORT
               value: '5156'
             - name: MS_URL
-              value: "ingestion:5155"
+              value: "http://ingestion:5155"
             - name: SECRET_KEY
               value: He39zDQW7RdkOcxe3L9qvoSQ/ef40BG6Ro4hrHDjE+U=
             - name: DB_ACCESS
