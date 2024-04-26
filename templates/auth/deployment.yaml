@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ms-auth
-          image: mouaffak1/ms-auth
+          image: mouaffak1/ms-auth:mouaffak
           ports:
             - containerPort: 5156
           env:

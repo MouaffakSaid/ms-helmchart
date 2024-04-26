@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ingestion
-          image: mouaffak1/ms-ingestion
+          image: mouaffak1/ms-ingestion:mouaffak
           ports:
             - containerPort: 5155
           env:
