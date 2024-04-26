@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ingestion
-          image: mouaffak1/ms-ingestion:mouaffak
+          image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-ingestion
           ports:
             - containerPort: 5155
           env:

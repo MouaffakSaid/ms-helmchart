@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ms-auth
-          image: mouaffak1/ms-auth:mouaffak
+          image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-auth
           ports:
             - containerPort: 5156
           env:
