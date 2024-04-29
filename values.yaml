@@ -7,3 +7,10 @@ ingestion-postgres:
   auth:
     postgresPassword: postgres
     database: contacts
+
+
+auth-deployment:
+  image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-auth
+
+ingestion-deployment:
+  image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-ingestion

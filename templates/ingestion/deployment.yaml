@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ingestion
-          image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-ingestion
+          image: {{.Values.ingestion-deployment.image}}
           ports:
             - containerPort: 5155
           env:

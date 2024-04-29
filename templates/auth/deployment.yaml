@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ms-auth
-          image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-auth
+          image: {{.Values.auth-deployment.image}}
           ports:
             - containerPort: 5156
           env:
