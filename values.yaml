@@ -9,8 +9,8 @@ ingestion-postgres:
     database: contacts
 
 
-auth-deployment:
+authdeployment:
   image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-auth
 
-ingestion-deployment:
+ingestiondeployment:
   image: 851725386825.dkr.ecr.us-east-1.amazonaws.com/ms-ingestion

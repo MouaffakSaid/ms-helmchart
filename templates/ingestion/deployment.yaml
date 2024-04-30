@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: ingestion
-          image: {{.Values.ingestion-deployment.image}}
+          image: {{.Values.ingestiondeployment.image}}
           ports:
             - containerPort: 5155
           env:
